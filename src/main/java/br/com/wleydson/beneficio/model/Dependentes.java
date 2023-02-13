@@ -5,10 +5,12 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Data
 @Entity
 @Table(name = "dependentes")
-public class Dependentes {
+public class Dependentes implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
